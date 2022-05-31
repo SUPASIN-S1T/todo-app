@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend-Mentor | Todo App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-light">
+    <header class="header-container">
+    </header>
+    <div class="container">
+      <div class="todo-app-container">
+        <!-- APP BAR -->
+        <div class="todo-app-bar">
+          <h1>TODO</h1>
+          <button class="toggle-theme"><i class="fas fa-moon"></i></button>
+        </div>
+        <!-- INPUT -->
+        <div class="todo-app-input">
+          <form class="todo-form-list">
+            <input
+              type="text"
+              class="todo-input"
+              placeholder="Create a new todo..."
+              required
+            />
+            <!-- <button class="btn-todo-add"><i class="fas fa-plus"></i></button> -->
+          </form>
+        </div>
+        <!-- OUTPUT LIST -->
+        <div class="todo-app-output">
+          <ul class="output-list"></ul>
+          <div class="output-list-actions">
+            <div class="output-detail">
+              <p class="item-count">
+                <span class="item-text-result">0</span> items left
+              </p>
+            </div>
+            <div class="output-buttons">
+              <button class="btn btn-all">All</button>
+              <button class="btn btn-active">Active</button>
+              <button class="btn btn-complete">Complete</button>
+            </div>
+            <div class="output-button">
+              <button class="btn btn-clear">Clear Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-footer">
+          <p>Drag and drop to reorder list</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
